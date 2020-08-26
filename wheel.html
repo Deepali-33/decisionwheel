@@ -11,36 +11,62 @@
     
     <div class = "buttons">
 
-        <button type="button" onclick="fun1()" id = "b1"> 1. Problem </button>
-        <br>
-        <br>
-        <button type="button" onclick="fun2()" id = "b2" disabled> 2. Choices </button>
-        <br>
-        <br>
-        <button type="button " onclick="fun3()" id = "b3" disabled> 3. Consequences </button>
-        <br>
-        <br>
-        <button type="button"  onclick="fun4()" id = "b4" disabled> 4. Values </button>
-        <br>
-        <br>
-        <button type="button" onclick="fun5()" id = "b5" disabled>5. Feelings</button>
-        <br>
-        <br>
-        <button type="button" onclick="fun6()" id = "b6" disabled>6. More Info</button>
-        <br>
-        <br>
-        <button type="button" onclick="fun7()" id = "b7" disabled>7. Who Can Help</button>
-        <br>
-        <br>
-        <button type="button" onclick="fun8()" id = "b8" disabled>8. Decision</button>
-        <br>
-        <br>
-        <button type="button" onclick="fun9()" id = "b9" disabled>9. Assess Decision</button>
-        <br>
-        <br>
 
-        <button type="button" onclick="wheel()" id = "b10" disabled>SUBMIT</button>
-    </div>  
+      <button type="button" onclick="show(this)" class = "btn" id="b1"> 1. Problem </button>
+      <br>
+      <br>
+      <button type="button" onclick="show(this)" class = "btn" id="b2" disabled> 2. Choices </button>
+      <br>
+      <br>
+      <button type="button " onclick="show(this)" class = "btn" id="b3" disabled> 3. Consequences </button>
+      <br>
+      <br>
+      <button type="button" onclick="show(this)" class = "btn" id="b4" disabled> 4. Values </button>
+      <br>
+      <br>
+      <button type="button" onclick="show(this)" class = "btn" id="b5" disabled>5. Feelings</button>
+      <br>
+      <br>
+      <button type="button" onclick="show(this)" class = "btn" id="b6" disabled>6. More Info</button>
+      <br>
+      <br>
+      <button type="button" onclick="show(this)" class = "btn" id="b7" disabled>7. Who Can Help</button>
+      <br>
+      <br>
+      <button type="button" onclick="show(this)" class = "btn" id="b8" disabled>8. Decision</button>
+      <br>
+      <br>
+      <button type="button" onclick="show(this)" class = "btn" id="b9" disabled>9. Assess Decision</button>
+      <br>
+      <br>
+  
+      <button type="button" onclick="window.location.reload()" id="b10" disabled>SUBMIT</button>
+  
+    </div>
+  <!-- -------------------------------------------------------------------------------------------- -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2 id="q">Question..........?</h2>
+        </div>
+        <div class="modal-body">
+          <h3>Your Answer :</h3>
+          <textarea id="txtarea" name="message"></textarea>
+        </div>
+        <div class="modal-footer">
+          <div id="f1">
+            <h2>Submit Your Answer</h2>
+          </div>
+          <div id="f2">
+            <button id="fsubmit" type="button" onclick="storingAnswers()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     
     <script src="wheel.js"></script>    
     
 </body>
