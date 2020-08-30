@@ -36,6 +36,11 @@ function show(btn)
   document.getElementById(nid).disabled = false;
   document.getElementById(btn.id).disabled = true;
 }
+
+
+
+
+
 //------------------------------------------------------------------------------------------
 
 // When the user clicks on <span> (x), close the modal
@@ -54,35 +59,56 @@ function storingAnswers() {
   modal.style.display = "none";
 }
 
-//-------------------------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------------------
+var modal2 = document.getElementById("myModal2");
+
+var span2 = document.getElementsByClassName("close2")[0];
+
+function show2(btn) 
+{
+  document.getElementById(btn.id).disabled = false;
+  var str1 = btn.id;
+  var num = parseInt(str1.charAt(1)) + 1;
+  var str2 = num.toString();
+  var nid = 'b'.concat(str2);
+  var qno = parseInt(str1.charAt(1)) - 1;
+  var question = questions[qno];
+
+  var x = document.getElementById("q2").innerHTML = question;
+
+  modal2.style.display = "block";
+  document.getElementById(nid).disabled = false;
+  document.getElementById(btn.id).disabled = true;
+}
+
+span2.onclick = function () {
+    modal2.style.display = "none";
+  }
 
 
-// // When the user clicks the button, open the modal 
-// function displaymodal() {
-//   modal.style.display = "block";
-// }
+  var newinput = function() {
+    var id = 1;
+    var parent = document.getElementById("container to ad");
+    console.log(parent);
+    var field = document.createElement("input")
+    field.className = "myclassname"
+    field.style = "display:block;"
+    field.id = "input" + id;
+    parent.appendChild(field);
+    id += 1;
+  }
 
-// When the user clicks anywhere outside of the modal, close it
-// window.onclick = function(event) {
-//   if (event.target == modal) {
-//     modal.style.display = "none";
-//   }
-// }
 
-
-
-// function show(btn) 
-// {
-//     document.getElementById(btn.id).disabled = false;
-//     alert("previous function  enabled me succesfully");
-
-//     var str1 =btn.id;
-//     var num=parseInt(str1.charAt(1))+1;
-//     var str2 = num.toString();
-//     var nid= 'b'.concat(str2);
-//     document.getElementById(nid).disabled = false;
-//     alert("next button enabled succesfully");
-//     document.getElementById(btn.id).disabled = true;
-// }
-
-//-----------------------------------------------------------------------------------------------------
+  function storingchoices() {
+    choicearray=[];
+    var choices = document.getElementsByClassName("myclassname");
+    console.log(choices.item);
+    for (var i = 0; i < choices.length; i++)
+    {
+        choicearray.push(choices[i].value)
+    }
+        console.log(choicearray);
+    modal2.style.display = "none";
+  }
+  
