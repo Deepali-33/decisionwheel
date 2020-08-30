@@ -16,12 +16,16 @@
   text-align: center;
 }
 
-.right{
-  width: 35%;
-  background-color: rgb(53, 151, 138);
-   float : right;
+.review {
+  border: 2px solid #000;
+  width: 25%;
+  float: right;
+  text-align: center;
   
-}  
+  height: 300px;
+  padding: 20px;
+  margin-top: 40px;
+}
 
 body {
   background-color: honeydew;
@@ -218,3 +222,6 @@ body {
    min-width: 99%;
   max-width: 99%; 
 } */
+
+
+
