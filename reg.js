@@ -1,4 +1,3 @@
-
 function registrationform() {
     console.log("click");
     var f = /^[A-Za-z]+$/;
@@ -110,9 +109,3 @@ function registrationform() {
  alert("Your name is "+fname+" "+lname+".  Your email is "+mail+".  Your phone number is "+num+". Your password is "+pswr+".   Thank You for your response.")
 }
    
-
-  
-
-
-
-

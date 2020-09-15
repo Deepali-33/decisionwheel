@@ -111,4 +111,3 @@ span2.onclick = function () {
         console.log(choicearray);
     modal2.style.display = "none";
   }
-  
