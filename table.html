@@ -1,0 +1,68 @@
+<html>
+
+<body>
+  <!-- Trigger/Open The Modal -->
+  <div style="background-color:#0F0F8C ;height:45px">
+    <h2 style="color: white">LOGO</h2>
+  </div>
+  <div>
+    <button id="myBtn">&emsp;+ Add Task &emsp;</button>
+  </div>
+  <div>
+    <table id="tasksTable">
+      <thead>
+        <tr style="background-color:rgba(201, 196, 196, 0.86)">
+          <th style="width: 150px;">Name</th>
+          <th style="width: 250px;">Desc</th>
+          <th style="width: 120px">Date</th>
+          <th style="width: 120px class=fa fa-trash"></th>
+        </tr>
+
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <span class="close">&times;</span>
+        <h3> Add Task</h3>
+      </div>
+
+      <div class="modal-body">
+        <table style="padding: 28px 50px">
+          <tr>
+            <td style="width:150px">Name:</td>
+            <td><input type="text" name="name" id="taskname" style="width: -webkit-fill-available"></td>
+          </tr>
+          <tr>
+            <td>
+              Desc:
+            </td>
+            <td>
+              <textarea name="desc" id="taskdesc" cols="60" rows="10"></textarea>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="modal-footer">
+        <button type="submit" value="submit" style="float: right;" onclick="addTasks()">SUBMIT</button>
+        <br>
+        <br>
+        <br>
+      </div>
+
+    </div>
+  </div>
+ <script src="table.js"></script>
+
+
+</body>
+
+</html>

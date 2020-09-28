@@ -16,51 +16,9 @@ var questions = [" 1. What is Problem ?",
        "8. what is your Decision ?",
         "9. Assess Decision"];
 
-//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-function show(btn) 
-{
-  document.getElementById(btn.id).disabled = false;
-  var str1 = btn.id;
-  var num = parseInt(str1.charAt(1)) + 1;
-  var str2 = num.toString();
-  var nid = 'b'.concat(str2);
-  var qno = parseInt(str1.charAt(1)) - 1;
-  var question = questions[qno];
-
-  var x = document.getElementById("q").innerHTML = question;
-  document.getElementById("txtarea").value = "";
-
-  modal.style.display = "block";
-  document.getElementById(nid).disabled = false;
-  // document.getElementById(btn.id).disabled = true;
-}
-
-
-
-
-
-//------------------------------------------------------------------------------------------
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  answers.push("");
-  modal.style.display = "none";
-}
 
 //----------------------------------------------------------------------------------------
-
-function storingAnswers() {
-  var ans = document.getElementById("txtarea").value;
-  answers.push(ans);
-  console.log(ans);
-  console.log(answers);
-  modal.style.display = "none";
-}
-
-
-//----------------------------------------------------------------------------------------
+console.log(onclick);
 var modal2 = document.getElementById("myModal2");
 
 var span2 = document.getElementsByClassName("close2")[0];

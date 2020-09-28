@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="try.css">
+</head>
+
+<body>
+  <div class="left">
+    <h1> Decision Making Tree</h1>
+    <br>
+    <div class="button">
+      <div>
+        <button class="btn" type="button" onclick="fun1()" id="b1"> 1. Problem </button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <p id = "p1"></p>
+              <span class="close">&times;</span>
+              
+
+
+            </div>
+            <div class="modal-body">
+              <p>Your answer here:</p>
+              <textarea name="prob" cols="60" rows="4"></textarea>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" value="submit" style="float: right;" onclick="addpro()">SUBMIT</button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+    <div class=" right">
+      <h1> Preview Table</h1>
+      <div>
+        <table id="tasksTable">
+          <thead>
+            <tr style="background-color:rgba(201, 196, 196, 0.86)">
+              <th style="width: 150px;">Questions</th>
+              <th style="width: 370px;">Your answers</th>
+
+              <th style="width: 120px class=fa fa-trash"></th>
+            </tr>
+
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="try.js"></script>
+
+
+</body>
+
+</html>
